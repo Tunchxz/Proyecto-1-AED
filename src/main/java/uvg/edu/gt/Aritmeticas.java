@@ -42,4 +42,41 @@ public class Aritmeticas {
         resultado = Double.toString(peek);
         return resultado;
     }
+
+    public String calculadoraEspaciada(String expresion) {
+        StackVector<Double> pila = new StackVector<Double>();
+        String resultado = "";
+        String nuevoPrefijo = expresion.replace("(", "").replace(")", "");
+        String[] lista = nuevoPrefijo.split(" ");
+
+        for (int i = lista.length - 1; i >= 0; i--) {
+            String aString = lista[i];
+            try {
+                pila.push(Double.parseDouble(aString));
+            } catch (Exception e) {
+                double num1 = 0;
+                double num2 = 0;
+                try {
+                    num1 = pila.pop();
+                    num2 = pila.pop();
+                } catch (Exception exception) {
+                    return "ERROR, Operación Inválida";
+                }
+
+                if (aString.equals("+")) {
+                    pila.push(num1 + num2);
+                } else if (aString.equals("*")) {
+                    pila.push(num1 * num2);
+                } else if (aString.equals("-")) {
+                    pila.push(num1 - num2);
+                } else if (aString.equals("/")) {
+                    pila.push(num1 / num2);
+                }
+            }
+        }
+
+        double peek = pila.peek();
+        resultado = Double.toString(peek);
+        return resultado;
+    }
 }
