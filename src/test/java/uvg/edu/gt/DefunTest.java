@@ -33,4 +33,20 @@ public class DefunTest {
         assertEquals(instruccion, defun.getInstruccion());
         assertEquals(codigo, defun.getCodigo());
     }
+
+    /**
+     * Prueba para verificar el almacenamiento de funciones en el intérprete.
+     * Se comprueba si las funciones definidas se almacenan correctamente en el
+     * intérprete.
+     */
+    @Test
+    public void testDefun() {
+        Interprete interprete = new Interprete();
+
+        interprete.interpretar("(defun sumar (a b) (+ a b))");
+        assertEquals("sumar", interprete.getStackArraylist().get(0).getNombre());
+
+        interprete.interpretar("(defun cuadrado (x) (* x x))");
+        assertEquals("cuadrado", interprete.getStackArraylist().get(1).getNombre());
+    }
 }
