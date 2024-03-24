@@ -1,6 +1,6 @@
 # Proyecto 1 - Interprete de LISP
 
-Desarrollo de un intérprete LISP para un subconjunto sencillo de instrucciones de alguno de los dos dialectos principales (Common LISP y Scheme).
+Desarrollo de un intérprete LISP para un subconjunto sencillo de instrucciones de alguno de los dosdialectos principales (Common LISP y Scheme).
 
 ## Información
 
@@ -18,3 +18,21 @@ Guatemala, 24 de marzo de 2024
 ## Controlador de Versiones
 
 [Repositorio Proyecto-1-AED](https://github.com/Tunchxz/Proyecto-1-AED "Enlace a GitHub")
+
+## Video Tutorial
+
+[¿Cómo usar el interprete?](https://youtu.be/wvS4_JqmGAc "Enlace a YouTube")
+
+## Diagramas UML (Clases, Casos de Uso, Secuencial)
+
+[Ver los diagramas del Interprete](https://www.canva.com/design/DAGAR5kPbSE/bUVoJh0IDMsjDebSzFNBOw/view?utm_content=DAGAR5kPbSE&utm_campaign=designshare&utm_medium=link&utm_source=editor "Enlace a Canva")
+
+## Guía de Cómo Usar el Interprete
+
+1. Respetar espacios entre caracteres, por ejemplo: (+ 3 2), existe un espacio entre el operador y entre ambos operandos. Lo anterior no aplica a las funcionalidades que requieren de palabras enteras, entiendase: defun, setq, cond, etc.
+
+2. La operación a realizar deberá estar escrita en una sola línea de código. Por ejemplo: (defun cubo (n) (_ (_ n n) n)). Importante tomar en cuenta esto, pues en common LISP las funciones pueden ser descritas a lo largo de varias lineas de código.
+
+3. Utilizar misma cantidad de parentesis abiertos que cerrados.
+
+4.
