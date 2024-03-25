@@ -46,7 +46,7 @@ public class Aritmeticas {
                     num1 = pila.pop();
                     num2 = pila.pop();
                 } catch (Exception exception) {
-                    return "ERROR, Operación Inválida";
+                    return "[Sistema]: Error. Operación no válida.";
                 }
 
                 // Realizamos la operación dependiendo del operador
@@ -59,7 +59,7 @@ public class Aritmeticas {
                 } else if (aString.equals("/")) {
                     pila.push(num1 / num2);
                 } else {
-                    return "ERROR, Operación Inválida";
+                    return "[Sistema]: Error. Operación no válida.";
                 }
             }
         }
@@ -96,7 +96,7 @@ public class Aritmeticas {
                     num1 = pila.pop();
                     num2 = pila.pop();
                 } catch (Exception exception) {
-                    return "ERROR, Operación Inválida";
+                    return "[Sistema]: Error. Operación no válida.";
                 }
 
                 // Realizamos la operación dependiendo del operador

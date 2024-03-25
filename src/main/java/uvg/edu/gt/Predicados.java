@@ -72,7 +72,7 @@ public class Predicados {
         if (equal == true) {
             String[] SaltoEspacio = expsplit.split(" ");
             if (SaltoEspacio.length <= 2) {
-                System.out.println("No hay suficientes parametros");
+                System.out.println("[Sistema]: Error. No hay suficientes parámetros.");
             } else {
                 if (SaltoEspacio[1].equals(SaltoEspacio[2])) {
                     respuesta = "true";
@@ -98,7 +98,7 @@ public class Predicados {
         if (mayorQue == true) {
             String[] SaltoEspacio = expsplit.split(" ");
             if (SaltoEspacio.length <= 2) {
-                System.out.println("No hay suficientes parametros");
+                System.out.println("[Sistema]: Error. No hay suficientes parámetros.");
             } else {
                 try {
                     int primerNumero = Integer.parseInt(SaltoEspacio[1]);
@@ -109,7 +109,7 @@ public class Predicados {
                         respuesta = "false";
                     }
                 } catch (Exception e) {
-                    System.out.println("No es un dato numerico");
+                    System.out.println("[Sistema]: Error. Ingrese un valor que sea númerico.");
                 }
             }
         }
@@ -117,7 +117,7 @@ public class Predicados {
         if (menorQue == true) {
             String[] SaltoEspacio = expsplit.split(" ");
             if (SaltoEspacio.length <= 2) {
-                System.out.println("No es un dato numerico");
+                System.out.println("[Sistema]: Error. Ingrese un valor que sea númerico.");
             } else {
                 try {
                     int primerNumero = Integer.parseInt(SaltoEspacio[1]);
@@ -128,7 +128,7 @@ public class Predicados {
                         respuesta = "false";
                     }
                 } catch (Exception e) {
-                    System.out.println("No es un dato numerico");
+                    System.out.println("[Sistema]: Error. Ingrese un valor que sea númerico.");
                 }
             }
         }

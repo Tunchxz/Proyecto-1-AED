@@ -28,7 +28,7 @@ public class Main {
 
             // Mensaje de bienvenida
             System.out.println(
-                    "--------------- Intérprete de Common Lisp (Por: Daniel Chet y Cristian Túnchez) ---------------");
+                    "\n--------------------| Intérprete de Common Lisp |--------------------");
 
             // Ciclo para leer el código línea por línea
             String linea;
@@ -40,7 +40,7 @@ public class Main {
             // Cerrar el flujo de lectura
             bufferedReader.close();
         } catch (Exception e) {
-            System.out.println("Error al leer el archivo: " + e.getMessage());
+            System.out.println("[Sistema]: Error al leer el archivo: " + e.getMessage());
         }
     }
 }

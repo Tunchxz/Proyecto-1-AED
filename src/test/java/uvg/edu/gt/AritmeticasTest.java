@@ -51,7 +51,7 @@ public class AritmeticasTest {
     public void testErrorOperacionInvalida() {
         Aritmeticas aritmetica = new Aritmeticas();
         String expresion = "+ 5 *";
-        String resultadoEsperado = "ERROR, Operación Inválida";
+        String resultadoEsperado = "[Sistema]: Error. Operación no válida.";
         assertEquals(resultadoEsperado, aritmetica.calculadoraPrefix(expresion));
     }
 }

@@ -1,6 +1,6 @@
 # Proyecto 1 - Interprete de LISP
 
-Desarrollo de un intérprete LISP para un subconjunto sencillo de instrucciones de alguno de los dosdialectos principales (Common LISP y Scheme).
+Desarrollo de un intérprete LISP para un subconjunto sencillo de instrucciones de alguno de los dos dialectos principales (Common LISP y Scheme).
 
 ## Información
 
@@ -35,4 +35,4 @@ Guatemala, 24 de marzo de 2024
 
 3. Utilizar misma cantidad de parentesis abiertos que cerrados.
 
-4.
+4. Debido a la complejidad de la recursividad, algunas funcionalidades del interprete no aceptan recursividad. Ejemplo de lo anterior es, SETQ. El interprete es incapaz de poder crear un variable a partir de algo como esto: (setq x (+ 1 2)), en su lugar, solo regresara un error al usuario. Sin embargo, funcionalidades importantes como defun si aceptan este tipo de recursividad y como ejemplo tenemos las funciones fibonacci y conversion dentro del archivo "Codigo.lisp" que se incluye en el proyecto.
